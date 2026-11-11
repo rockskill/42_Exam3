@@ -11,8 +11,7 @@ def get_value(string: str) -> tuple[int, str, int]:
 
 def cryptic_sorter(strings: list[str]) -> list[str]:
     strings_sorted: list[str] = list(strings)
-    strings_length: int = len(strings_sorted)
-    for i in range(1, strings_length):
+    for i in range(1, len(strings_sorted)):
         string: str = strings_sorted[i]
         value: tuple[int, str, int] = get_value(string)
         j: int = i - 1
