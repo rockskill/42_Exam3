@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 
 
+"""
+ASSIGNMENT:
+Write a function that checks if two strings are anagrams.
+They must contain exactly the same letters with the same quantity,
+ignoring case and spaces.
+"""
+
+
 def to_lower(s: str) -> str:
     lower_s: str = ""
     for c in s:

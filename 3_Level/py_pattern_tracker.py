@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 
 
+"""
+ASSIGNMENT:
+Write a function that counts the number of valid consecutive digit pairs
+in a string. A valid pair consists of two adjacent digits where the second
+digit is exactly one greater than the first.
+A 9 followed by a 0 is NOT a valid pair.
+"""
+
+
 def pattern_tracker(text: str) -> int:
     text_length: int = len(text)
     if text_length == 0:

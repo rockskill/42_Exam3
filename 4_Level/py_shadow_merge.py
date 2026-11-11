@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 
 
+"""
+ASSIGNMENT:
+Write a function that merges two sorted lists into one sorted list.
+"""
+
+
 def py_shadow_merge(list1: list[int], list2: list[int]) -> list[int]:
     if len(list1) == 0:
         return list2

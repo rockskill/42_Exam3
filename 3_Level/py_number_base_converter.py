@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 
 
+"""
+ASSIGNMENT:
+Write a function that converts a number from one base to another.
+Support bases from 2 to 36 inclusive.
+Use digits 0-9 and letters A-Z for values 10-35.
+Return "ERROR" for invalid inputs.
+"""
+
+
 def number_base_converter(number: str, from_base: int, to_base: int) -> str:
     if not (from_base >= 2 and from_base <= 36 and
             to_base >= 2 and to_base <= 36):

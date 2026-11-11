@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 
 
+"""
+ASSIGNMENT:
+Write a function that determines if two strings are permutations of each other.
+Case sensitive. Whitespace and punctuation count as regular characters.
+Empty strings are permutations of each other.
+"""
+
+
 def string_permutation_checker(s1: str, s2: str) -> bool:
     if len(s1) != len(s2):
         return False
