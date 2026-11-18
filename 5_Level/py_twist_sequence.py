@@ -9,9 +9,10 @@ Rotating right by k means the last k elements move to the front.
 
 
 def twist_sequence(arr: list[int], k: int) -> list[int]:
-    if len(arr) == 0 or k == 0:
-        return arr
     arr_length: int = len(arr)
+    if arr_length == 0 or k == 0:
+        del arr_length
+        return arr
     k = k % arr_length
     if k == 0:
         return list(arr)
