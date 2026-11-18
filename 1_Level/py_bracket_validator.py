@@ -29,6 +29,7 @@ def bracket_validator(s: str) -> bool:
                 return False
         elif c == '(' or c == '[' or c == '{':
             brackets.append(c)
+    del brackets_dict
     return len(brackets) == 0
 
 
