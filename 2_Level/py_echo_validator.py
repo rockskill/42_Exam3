@@ -16,11 +16,13 @@ def echo_validator(text: str) -> bool:
     for c in text:
         if c != ' ':
             text_without_spaces += c
-    if len(text_without_spaces) == 0:
+    text_without_spaces_length: int = len(text_without_spaces)
+    if text_without_spaces_length == 0:
         return False
-    for i in range(len(text_without_spaces) // 2):
+    for i in range(text_without_spaces_length // 2):
         if text_without_spaces[i].lower() != text_without_spaces[-i-1].lower():
             return False
+    del text_without_spaces_length
     return True
 
 
