@@ -16,6 +16,7 @@ def inter(s1: str, s2: str) -> str:
         if c not in checked and c in s2:
             output += c
         checked.add(c)
+    del checked
     return output
 
 
