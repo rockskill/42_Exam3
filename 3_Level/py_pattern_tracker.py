@@ -13,12 +13,14 @@ A 9 followed by a 0 is NOT a valid pair.
 def pattern_tracker(text: str) -> int:
     text_length: int = len(text)
     if text_length == 0:
+        del text_length
         return 0
     pair_counter: int = 0
     for i in range(text_length - 1):
         if text[i].isdigit():
             if ord(text[i]) + 1 == ord(text[i + 1]):
                 pair_counter += 1
+    del text_length
     return pair_counter
 
 
