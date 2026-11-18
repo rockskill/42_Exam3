@@ -11,16 +11,27 @@ Function is case-sensitive.
 
 
 def hidenp(small: str, big: str) -> bool:
-    if len(small) == 0:
+    small_length: int = len(small)
+    if small_length == 0:
+        del small_length
         return True
-    if len(small) > len(big):
+    big_length: int = len(big)
+    if small_length > big_length:
+        del small_length
+        del big_length
         return False
     coincidence_counter: int = 0
-    for i in range(len(big)):
+    for i in range(big_length):
         if big[i] == small[coincidence_counter]:
             coincidence_counter += 1
-        if coincidence_counter == len(small):
+        if coincidence_counter == small_length:
+            del coincidence_counter
+            del small_length
+            del big_length
             return True
+    del coincidence_counter
+    del small_length
+    del big_length
     return False
 
 
