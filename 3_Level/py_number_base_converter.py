@@ -29,6 +29,9 @@ def number_base_converter(number: str, from_base: int, to_base: int) -> str:
         number_int //= to_base
     if number_negative:
         number_converted += "-"
+    del number_int
+    del number_negative
+    del base_symbols
     return number_converted[::-1]
 
 
