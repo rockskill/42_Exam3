@@ -25,6 +25,7 @@ def string_sculptor(text: str) -> str:
             c_lower = not c_lower
         else:
             sculpted_string += c
+    del c_lower
     return sculpted_string
 
 
