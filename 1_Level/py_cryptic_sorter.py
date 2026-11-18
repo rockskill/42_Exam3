@@ -24,6 +24,8 @@ def get_value(string: str) -> tuple[int, str, int]:
 
 
 def cryptic_sorter(strings: list[str]) -> list[str]:
+    if len(strings) == 0 or len(strings) == 1:
+        return strings
     strings_sorted: list[str] = list(strings)
     for i in range(1, len(strings_sorted)):
         string: str = strings_sorted[i]
